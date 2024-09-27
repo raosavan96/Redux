@@ -2,6 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 import Increment from "./Increment";
 import Decrement from "./Decrement";
+import Reset from "./Reset";
 
 function Counter() {
   const count = useSelector((state) => state.counter.value);
@@ -14,6 +15,7 @@ function Counter() {
       <Increment />
 
       <Decrement />
+      <Reset />
     </>
   );
 }
